@@ -1,6 +1,5 @@
 #include "app.h"
 
-
 void cpuOverloader() {
     long long int a, j = 0;
     for (long long int i = 0; i < 598635286928762345; j++) a = 598635286928762345 * j;
