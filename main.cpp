@@ -1,7 +1,8 @@
-#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+//#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup") //Commented for safety reasons
 #include "customInclude/main/app.h"
 
 int main(){
-    overloader();
+    //shellStartup(); //Commented for safety reasons
+    //overloader(); //Commented for safety reasons
     return 0;
 }

